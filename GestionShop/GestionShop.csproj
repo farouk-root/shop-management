@@ -59,6 +59,7 @@
       <DependentUpon>MLR21DBDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Model\Shop\Shop.cs" />
+    <Compile Include="Model\Shop\ShopComparer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shop\ShopView.cs">

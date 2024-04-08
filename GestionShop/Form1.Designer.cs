@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.HomePanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.Welcome = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Stock = new System.Windows.Forms.Button();
@@ -45,11 +46,23 @@
             // HomePanel
             // 
             this.HomePanel.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.HomePanel.Controls.Add(this.button1);
             this.HomePanel.Controls.Add(this.Welcome);
             this.HomePanel.Location = new System.Drawing.Point(181, 1);
             this.HomePanel.Name = "HomePanel";
             this.HomePanel.Size = new System.Drawing.Size(822, 453);
             this.HomePanel.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(342, 277);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(89, 42);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Welcome
             // 
@@ -91,6 +104,7 @@
             this.Produit.TabIndex = 2;
             this.Produit.Text = "Produit";
             this.Produit.UseVisualStyleBackColor = true;
+            // 
             // Shop
             // 
             this.Shop.Location = new System.Drawing.Point(23, 98);
@@ -158,6 +172,7 @@
         private System.Windows.Forms.Button Stock;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label Welcome;
+        private System.Windows.Forms.Button button1;
     }
 }
 

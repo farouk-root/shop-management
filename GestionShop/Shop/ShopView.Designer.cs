@@ -52,10 +52,11 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.AddShopButton = new System.Windows.Forms.Button();
             this.UpdateShopButton = new System.Windows.Forms.Button();
-            this.ResetShopButton = new System.Windows.Forms.Button();
             this.DeleteShopButton = new System.Windows.Forms.Button();
             this.ShowShops = new System.Windows.Forms.Button();
             this.sHOPTableAdapter = new GestionShop.MLR21DBDataSetTableAdapters.SHOPTableAdapter();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.ResetShopButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -178,6 +179,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -264,15 +266,6 @@
             this.UpdateShopButton.UseVisualStyleBackColor = true;
             this.UpdateShopButton.Click += new System.EventHandler(this.UpdateShopButton_Click);
             // 
-            // ResetShopButton
-            // 
-            this.ResetShopButton.Location = new System.Drawing.Point(21, 314);
-            this.ResetShopButton.Name = "ResetShopButton";
-            this.ResetShopButton.Size = new System.Drawing.Size(97, 43);
-            this.ResetShopButton.TabIndex = 12;
-            this.ResetShopButton.Text = "Reset";
-            this.ResetShopButton.UseVisualStyleBackColor = true;
-            // 
             // DeleteShopButton
             // 
             this.DeleteShopButton.Location = new System.Drawing.Point(386, 396);
@@ -297,11 +290,33 @@
             // 
             this.sHOPTableAdapter.ClearBeforeFill = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "All",
+            "Name",
+            "Localisation"});
+            this.comboBox1.Location = new System.Drawing.Point(419, 93);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 15;
+            // 
+            // ResetShopButton
+            // 
+            this.ResetShopButton.Location = new System.Drawing.Point(21, 314);
+            this.ResetShopButton.Name = "ResetShopButton";
+            this.ResetShopButton.Size = new System.Drawing.Size(97, 43);
+            this.ResetShopButton.TabIndex = 12;
+            this.ResetShopButton.Text = "Reset";
+            this.ResetShopButton.UseVisualStyleBackColor = true;
+            // 
             // ShopView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.ShowShops);
             this.Controls.Add(this.DeleteShopButton);
             this.Controls.Add(this.ResetShopButton);
@@ -345,7 +360,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button AddShopButton;
         private System.Windows.Forms.Button UpdateShopButton;
-        private System.Windows.Forms.Button ResetShopButton;
         private System.Windows.Forms.Button DeleteShopButton;
         private System.Windows.Forms.Button ShowShops;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -356,5 +370,7 @@
         private System.Windows.Forms.BindingSource sHOPBindingSource;
         private MLR21DBDataSet mLR21DBDataSet;
         private MLR21DBDataSetTableAdapters.SHOPTableAdapter sHOPTableAdapter;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button ResetShopButton;
     }
 }

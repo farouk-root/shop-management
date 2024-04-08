@@ -24,5 +24,10 @@ namespace GestionShop
             HomePanel.Controls.Add(ShopCrud);
             ShopCrud.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("heelo");
+        }
     }
 }

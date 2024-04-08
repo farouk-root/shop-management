@@ -1,12 +1,12 @@
+C:\Users\farouk\documents\visual studio 2010\Projects\GestionShop\GestionShop\bin\Debug\MLR21DB.accdb
+C:\Users\farouk\documents\visual studio 2010\Projects\GestionShop\GestionShop\bin\Debug\GestionShop.exe.config
+C:\Users\farouk\documents\visual studio 2010\Projects\GestionShop\GestionShop\bin\Debug\GestionShop.exe
+C:\Users\farouk\documents\visual studio 2010\Projects\GestionShop\GestionShop\bin\Debug\GestionShop.pdb
 C:\Users\farouk\documents\visual studio 2010\Projects\GestionShop\GestionShop\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\farouk\documents\visual studio 2010\Projects\GestionShop\GestionShop\obj\x86\Debug\GestionShop.Form1.resources
 C:\Users\farouk\documents\visual studio 2010\Projects\GestionShop\GestionShop\obj\x86\Debug\GestionShop.Properties.Resources.resources
 C:\Users\farouk\documents\visual studio 2010\Projects\GestionShop\GestionShop\obj\x86\Debug\GestionShop.Shop.ShopView.resources
 C:\Users\farouk\documents\visual studio 2010\Projects\GestionShop\GestionShop\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\farouk\documents\visual studio 2010\Projects\GestionShop\GestionShop\obj\x86\Debug\GenerateResource.write.1.tlog
-C:\Users\farouk\documents\visual studio 2010\Projects\GestionShop\GestionShop\bin\Debug\MLR21DB.accdb
-C:\Users\farouk\documents\visual studio 2010\Projects\GestionShop\GestionShop\bin\Debug\GestionShop.exe.config
-C:\Users\farouk\documents\visual studio 2010\Projects\GestionShop\GestionShop\bin\Debug\GestionShop.exe
-C:\Users\farouk\documents\visual studio 2010\Projects\GestionShop\GestionShop\bin\Debug\GestionShop.pdb
 C:\Users\farouk\documents\visual studio 2010\Projects\GestionShop\GestionShop\obj\x86\Debug\GestionShop.exe
 C:\Users\farouk\documents\visual studio 2010\Projects\GestionShop\GestionShop\obj\x86\Debug\GestionShop.pdb
