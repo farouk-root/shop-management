@@ -1,0 +1,14 @@
+C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\bin\Debug\ShopManagement.exe.config
+C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\bin\Debug\ShopManagement.exe
+C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\bin\Debug\ShopManagement.pdb
+C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\obj\x86\Debug\ShopManagement.Form1.resources
+C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\obj\x86\Debug\ShopManagement.Properties.Resources.resources
+C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\obj\x86\Debug\ShopManagement.view.Login.Login.resources
+C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\obj\x86\Debug\ShopManagement.view.Login.SignUp.resources
+C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\obj\x86\Debug\ShopManagement.view.Shop.ShopAdmin.resources
+C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\obj\x86\Debug\ShopManagement.exe
+C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\obj\x86\Debug\ShopManagement.pdb
+C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\bin\Debug\NEWSHOP.accdb
