@@ -28,7 +28,8 @@ namespace ShopManagement.view.Shop
             shopController = new ShopController(); 
             shopsBindingSource.DataSource = null; 
             dataGridView_Shops.DataSource = shopsBindingSource; 
-            LoadShopsData(); 
+            LoadShopsData();
+            comboBox_critere.SelectedIndex = 0;
         }
 
         private void ClearShopDetails()
@@ -138,14 +139,16 @@ namespace ShopManagement.view.Shop
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             string searchText = textBox1.Text;
+            if (searchText == "")
+                LoadShopsData(); 
             string criteria = comboBox_critere.SelectedItem.ToString();
-
-            Console.WriteLine(criteria);
-
-            // Call the search function from controller and update data grid
-            List<ShopModel> searchedShops = shopController.SearchShops(criteria, searchText);
-            shopsBindingSource.DataSource = searchedShops; // Update data source for the grid
-            LoadShopsData(); 
+            if (criteria != "")
+            {
+                List<ShopModel> searchedShops = shopController.SearchShops(criteria, searchText);
+                shopsBindingSource.DataSource = searchedShops;
+            }
+            else
+                LoadShopsData(); 
         }
     }
 }

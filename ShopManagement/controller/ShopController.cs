@@ -117,12 +117,12 @@ namespace ShopManagement.controller
                 switch (criteria)
                 {
                     case "NameShop":
-                        searchQuery = "SELECT * FROM SHOP WHERE NAMESHOP LIKE @SearchText";
+                        searchQuery = "SELECT * FROM SHOP WHERE NAMESHOP LIKE @SearchText"; // Add wildcards for partial matches
                         break;
-                    case "LocationShop":
+                    case "Location":
                         searchQuery = "SELECT * FROM SHOP WHERE LOCATIONSHOP LIKE @SearchText";
                         break;
-                    case "PhoneShop":
+                    case "Phone":
                         searchQuery = "SELECT * FROM SHOP WHERE PHONESHOP LIKE @SearchText";
                         break;
                     default:
@@ -130,21 +130,30 @@ namespace ShopManagement.controller
                         break;
                 }
 
+                Console.WriteLine(searchQuery); // For debugging (optional)
+
                 using (OleDbCommand command = new OleDbCommand(searchQuery, connection))
                 {
-                    command.Parameters.AddWithValue("@SearchText", "%" + searchText + "%"); // Add wildcards for partial matches
-
+                    command.Parameters.AddWithValue("@SearchText", "%" + searchText + "%");
                     using (OleDbDataReader reader = command.ExecuteReader())
                     {
-                        while (reader.Read())
+                        if (reader.HasRows)
                         {
-                            long idShop = Convert.ToInt64(reader["IDSHOP"]);
-                            string nameShop = reader["NAMESHOP"].ToString();
-                            string locationShop = reader["LOCATIONSHOP"].ToString();
-                            string phoneShop = reader["PHONESHOP"].ToString();
+                            while (reader.Read())
+                            {
+                                long idShop = Convert.ToInt64(reader["IDSHOP"]);
+                                string nameShop = reader["NAMESHOP"].ToString();
+                                string locationShop = reader["LOCATIONSHOP"].ToString();
+                                string phoneShop = reader["PHONESHOP"].ToString();
 
-                            ShopModel shop = new ShopModel(idShop, nameShop, locationShop, phoneShop);
-                            shops.Add(shop);
+                                ShopModel shop = new ShopModel(idShop, nameShop, locationShop, phoneShop);
+                                Console.WriteLine(shop.NAMESHOP); // For debugging (optional)
+                                shops.Add(shop);
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("No rows found"); // Informative message (optional)
                         }
                     }
                 }
@@ -152,6 +161,36 @@ namespace ShopManagement.controller
 
             return shops;
         }
+
+        public ShopModel GetShopByID(long shopID)
+        {
+            ShopModel shop = null;
+
+            using (OleDbConnection connection = Connection.GetConnection())
+            {
+                connection.Open();
+                string selectQuery = "SELECT * FROM SHOP WHERE IDSHOP = @IDSHOP";
+                using (OleDbCommand command = new OleDbCommand(selectQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@IDSHOP", shopID);
+                    using (OleDbDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            long idShop = Convert.ToInt64(reader["IDSHOP"]);
+                            string nameShop = reader["NAMESHOP"].ToString();
+                            string locationShop = reader["LOCATIONSHOP"].ToString();
+                            string phoneShop = reader["PHONESHOP"].ToString();
+
+                            shop = new ShopModel(idShop, nameShop, locationShop, phoneShop);
+                        }
+                    }
+                }
+            }
+
+            return shop;
+        }
+
 
     }
 }

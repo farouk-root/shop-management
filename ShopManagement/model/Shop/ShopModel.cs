@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ShopManagement.model.Shop
 {
-    class ShopModel
+    public class ShopModel
     {
         public long IDSHOP { get; set; }
         public string NAMESHOP { get; set; }

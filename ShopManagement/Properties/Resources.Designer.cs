@@ -74,6 +74,20 @@ namespace ShopManagement.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap categoryIcon {
+            get {
+                object obj = ResourceManager.GetObject("categoryIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap clientIcon {
+            get {
+                object obj = ResourceManager.GetObject("clientIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap deleteIcon {
             get {
                 object obj = ResourceManager.GetObject("deleteIcon", resourceCulture);
@@ -81,9 +95,23 @@ namespace ShopManagement.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap descriptionIcon {
+            get {
+                object obj = ResourceManager.GetObject("descriptionIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap localisationIcon {
             get {
                 object obj = ResourceManager.GetObject("localisationIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap logoutIcon {
+            get {
+                object obj = ResourceManager.GetObject("logoutIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -105,6 +133,34 @@ namespace ShopManagement.Properties {
         internal static System.Drawing.Bitmap pngwing_com {
             get {
                 object obj = ResourceManager.GetObject("pngwing.com", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap priceIcon {
+            get {
+                object obj = ResourceManager.GetObject("priceIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap productIcon {
+            get {
+                object obj = ResourceManager.GetObject("productIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap productNewIcon {
+            get {
+                object obj = ResourceManager.GetObject("productNewIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap purchaseIcon {
+            get {
+                object obj = ResourceManager.GetObject("purchaseIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

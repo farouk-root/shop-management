@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ShopManagement.model.User
 {
-    class UserModel
+    public class UserModel
     {
         public long IDUSER { get; set; }
         public long IDSHOP { get; set; }

@@ -14,6 +14,7 @@ namespace ShopManagement.view.Login
 {
     public partial class Login : UserControl
     {
+        public UserModel userData = new UserModel();
         public Login()
         {
             InitializeComponent();
@@ -39,14 +40,20 @@ namespace ShopManagement.view.Login
             UserModel user = userController.SignIn(username, password);
             if (user != null)
             {
-                Console.WriteLine(user.ToString());
-                Console.WriteLine(user.IDSHOP);
+                userData = new UserModel(user.IDUSER, user.IDSHOP,user.Username, user.Password, user.Role);
                 if (user.Role == "ADMIN")
                 {
                     this.Controls.Clear();
                     UserControl ShopsViewAdmin = new ShopAdmin();
                     this.Controls.Add(ShopsViewAdmin);
                     ShopsViewAdmin.Show();
+                }
+                else if (user.Role == "GERANT" || user.Role == "STAFF")
+                {
+                    this.Controls.Clear();
+                    UserControl ShopsView = new ShopPlatform(userData);
+                    this.Controls.Add(ShopsView);
+                    ShopsView.Show();
                 }
             }
             else

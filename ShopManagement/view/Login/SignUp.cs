@@ -16,6 +16,7 @@ namespace ShopManagement.view.Login
         public SignUp()
         {
             InitializeComponent();
+            comboBox_Role.SelectedIndex = 2;
         }
 
         private void button_signUp_Click(object sender, EventArgs e)

@@ -76,11 +76,23 @@
     <Compile Include="view\Login\SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\Shop\ProductsShop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="view\Shop\ProductsShop.Designer.cs">
+      <DependentUpon>ProductsShop.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\Shop\ShopAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="view\Shop\ShopAdmin.Designer.cs">
       <DependentUpon>ShopAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\Shop\ShopPlatform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="view\Shop\ShopPlatform.Designer.cs">
+      <DependentUpon>ShopPlatform.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -101,8 +113,14 @@
     <EmbeddedResource Include="view\Login\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\Shop\ProductsShop.resx">
+      <DependentUpon>ProductsShop.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\Shop\ShopAdmin.resx">
       <DependentUpon>ShopAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Shop\ShopPlatform.resx">
+      <DependentUpon>ShopPlatform.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="NEWSHOPDataSet.xsc">
@@ -151,6 +169,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\searchIcon.png" />
+    <None Include="Assets\productIcon.png" />
+    <None Include="Assets\purchaseIcon.png" />
+    <None Include="Assets\clientIcon.png" />
+    <None Include="Assets\logoutIcon.png" />
+    <None Include="Assets\productNewIcon.png" />
+    <None Include="Assets\priceIcon.png" />
+    <None Include="Assets\categoryIcon.png" />
+    <None Include="Assets\descriptionIcon.png" />
     <Content Include="NEWSHOP.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

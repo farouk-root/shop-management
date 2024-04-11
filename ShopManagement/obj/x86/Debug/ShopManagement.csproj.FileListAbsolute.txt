@@ -12,3 +12,5 @@ C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\obj\x86\Debug\Generat
 C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\obj\x86\Debug\ShopManagement.exe
 C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\obj\x86\Debug\ShopManagement.pdb
 C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\bin\Debug\NEWSHOP.accdb
+C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\obj\x86\Debug\ShopManagement.view.Shop.ShopPlatform.resources
+C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\obj\x86\Debug\ShopManagement.view.Shop.ProductsShop.resources
