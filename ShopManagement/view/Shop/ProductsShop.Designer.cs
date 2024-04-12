@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -49,7 +52,7 @@
             this.label_ShopName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView_Products = new System.Windows.Forms.DataGridView();
             this.iDPRODUITDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nOMPRODUITDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pRIXPRODUITDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,9 +64,9 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.comboBox_categoryP = new System.Windows.Forms.ComboBox();
+            this.comboBox_Stocks = new System.Windows.Forms.ComboBox();
+            this.richTextBox_decriptionP = new System.Windows.Forms.RichTextBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -77,15 +80,17 @@
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.label_phoneShop = new System.Windows.Forms.Label();
-            this.textBox_locationShop = new System.Windows.Forms.TextBox();
+            this.textBox_priceP = new System.Windows.Forms.TextBox();
             this.label_localisationShop = new System.Windows.Forms.Label();
-            this.textBox_nameShop = new System.Windows.Forms.TextBox();
+            this.textBox_nameP = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.pRODUITTableAdapter = new ShopManagement.NEWSHOPDataSetTableAdapters.PRODUITTableAdapter();
             this.sTOCKBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sTOCKTableAdapter = new ShopManagement.NEWSHOPDataSetTableAdapters.STOCKTableAdapter();
             this.panel1.SuspendLayout();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -97,7 +102,7 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Products)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRODUITBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nEWSHOPDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -116,6 +121,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.panel5);
@@ -130,6 +137,38 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 667);
             this.panel1.TabIndex = 1;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel8.Controls.Add(this.label14);
+            this.panel8.Controls.Add(this.pictureBox16);
+            this.panel8.Location = new System.Drawing.Point(2, 297);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(217, 86);
+            this.panel8.TabIndex = 4;
+            this.panel8.Click += new System.EventHandler(this.panel8_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Bisque;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(70, 63);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(56, 20);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Stock";
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::ShopManagement.Properties.Resources.stockIcon;
+            this.pictureBox16.Location = new System.Drawing.Point(50, 0);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(102, 60);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 1;
+            this.pictureBox16.TabStop = false;
             // 
             // label6
             // 
@@ -157,7 +196,7 @@
             this.panel5.BackColor = System.Drawing.Color.PeachPuff;
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.pictureBox5);
-            this.panel5.Location = new System.Drawing.Point(3, 403);
+            this.panel5.Location = new System.Drawing.Point(3, 502);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(217, 86);
             this.panel5.TabIndex = 7;
@@ -233,7 +272,7 @@
             this.panel4.BackColor = System.Drawing.Color.PeachPuff;
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Location = new System.Drawing.Point(3, 300);
+            this.panel4.Location = new System.Drawing.Point(3, 399);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(217, 86);
             this.panel4.TabIndex = 3;
@@ -262,11 +301,12 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Location = new System.Drawing.Point(3, 199);
+            this.panel3.Location = new System.Drawing.Point(-2, 199);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(217, 86);
+            this.panel3.Size = new System.Drawing.Size(222, 86);
             this.panel3.TabIndex = 2;
             // 
             // label1
@@ -324,7 +364,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.PeachPuff;
-            this.panel6.Controls.Add(this.dataGridView1);
+            this.panel6.Controls.Add(this.dataGridView_Products);
             this.panel6.Controls.Add(this.comboBox_critere);
             this.panel6.Controls.Add(this.pictureBox7);
             this.panel6.Controls.Add(this.textBox1);
@@ -333,22 +373,23 @@
             this.panel6.Size = new System.Drawing.Size(580, 343);
             this.panel6.TabIndex = 3;
             // 
-            // dataGridView1
+            // dataGridView_Products
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridView_Products.AllowUserToOrderColumns = true;
+            this.dataGridView_Products.AutoGenerateColumns = false;
+            this.dataGridView_Products.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_Products.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDPRODUITDataGridViewTextBoxColumn,
             this.nOMPRODUITDataGridViewTextBoxColumn,
             this.pRIXPRODUITDataGridViewTextBoxColumn,
             this.cATEGORYPRODUITDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.pRODUITBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(7, 43);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(573, 297);
-            this.dataGridView1.TabIndex = 9;
+            this.dataGridView_Products.DataSource = this.pRODUITBindingSource;
+            this.dataGridView_Products.Location = new System.Drawing.Point(7, 43);
+            this.dataGridView_Products.Name = "dataGridView_Products";
+            this.dataGridView_Products.RowTemplate.Height = 24;
+            this.dataGridView_Products.Size = new System.Drawing.Size(573, 297);
+            this.dataGridView_Products.TabIndex = 9;
+            this.dataGridView_Products.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView_Products_RowHeaderMouseClick);
             // 
             // iDPRODUITDataGridViewTextBoxColumn
             // 
@@ -420,9 +461,9 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.PeachPuff;
             this.panel7.Controls.Add(this.pictureBox14);
-            this.panel7.Controls.Add(this.comboBox2);
-            this.panel7.Controls.Add(this.comboBox1);
-            this.panel7.Controls.Add(this.richTextBox1);
+            this.panel7.Controls.Add(this.comboBox_categoryP);
+            this.panel7.Controls.Add(this.comboBox_Stocks);
+            this.panel7.Controls.Add(this.richTextBox_decriptionP);
             this.panel7.Controls.Add(this.pictureBox15);
             this.panel7.Controls.Add(this.label13);
             this.panel7.Controls.Add(this.label12);
@@ -436,9 +477,9 @@
             this.panel7.Controls.Add(this.pictureBox12);
             this.panel7.Controls.Add(this.pictureBox13);
             this.panel7.Controls.Add(this.label_phoneShop);
-            this.panel7.Controls.Add(this.textBox_locationShop);
+            this.panel7.Controls.Add(this.textBox_priceP);
             this.panel7.Controls.Add(this.label_localisationShop);
-            this.panel7.Controls.Add(this.textBox_nameShop);
+            this.panel7.Controls.Add(this.textBox_nameP);
             this.panel7.Controls.Add(this.label10);
             this.panel7.Location = new System.Drawing.Point(247, 101);
             this.panel7.Name = "panel7";
@@ -455,35 +496,35 @@
             this.pictureBox14.TabIndex = 24;
             this.pictureBox14.TabStop = false;
             // 
-            // comboBox2
+            // comboBox_categoryP
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBox_categoryP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_categoryP.FormattingEnabled = true;
+            this.comboBox_categoryP.Items.AddRange(new object[] {
             "Home",
             "Femme",
             "Accessoires"});
-            this.comboBox2.Location = new System.Drawing.Point(51, 164);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(198, 30);
-            this.comboBox2.TabIndex = 23;
+            this.comboBox_categoryP.Location = new System.Drawing.Point(51, 164);
+            this.comboBox_categoryP.Name = "comboBox_categoryP";
+            this.comboBox_categoryP.Size = new System.Drawing.Size(198, 30);
+            this.comboBox_categoryP.TabIndex = 23;
             // 
-            // comboBox1
+            // comboBox_Stocks
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(53, 233);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(198, 30);
-            this.comboBox1.TabIndex = 22;
+            this.comboBox_Stocks.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_Stocks.FormattingEnabled = true;
+            this.comboBox_Stocks.Location = new System.Drawing.Point(53, 233);
+            this.comboBox_Stocks.Name = "comboBox_Stocks";
+            this.comboBox_Stocks.Size = new System.Drawing.Size(198, 30);
+            this.comboBox_Stocks.TabIndex = 22;
             // 
-            // richTextBox1
+            // richTextBox_decriptionP
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(51, 312);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(201, 86);
-            this.richTextBox1.TabIndex = 21;
-            this.richTextBox1.Text = "com";
+            this.richTextBox_decriptionP.Location = new System.Drawing.Point(51, 312);
+            this.richTextBox_decriptionP.Name = "richTextBox_decriptionP";
+            this.richTextBox_decriptionP.Size = new System.Drawing.Size(201, 86);
+            this.richTextBox_decriptionP.TabIndex = 21;
+            this.richTextBox_decriptionP.Text = "com";
             // 
             // pictureBox15
             // 
@@ -544,6 +585,7 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 12;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // pictureBox9
             // 
@@ -554,6 +596,7 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 11;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // label9
             // 
@@ -574,6 +617,7 @@
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 9;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // pictureBox11
             // 
@@ -615,13 +659,13 @@
             this.label_phoneShop.TabIndex = 4;
             this.label_phoneShop.Text = "Category :";
             // 
-            // textBox_locationShop
+            // textBox_priceP
             // 
-            this.textBox_locationShop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_locationShop.Location = new System.Drawing.Point(51, 103);
-            this.textBox_locationShop.Name = "textBox_locationShop";
-            this.textBox_locationShop.Size = new System.Drawing.Size(201, 30);
-            this.textBox_locationShop.TabIndex = 3;
+            this.textBox_priceP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_priceP.Location = new System.Drawing.Point(51, 103);
+            this.textBox_priceP.Name = "textBox_priceP";
+            this.textBox_priceP.Size = new System.Drawing.Size(201, 30);
+            this.textBox_priceP.TabIndex = 3;
             // 
             // label_localisationShop
             // 
@@ -633,13 +677,13 @@
             this.label_localisationShop.TabIndex = 2;
             this.label_localisationShop.Text = "Price :";
             // 
-            // textBox_nameShop
+            // textBox_nameP
             // 
-            this.textBox_nameShop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_nameShop.Location = new System.Drawing.Point(51, 37);
-            this.textBox_nameShop.Name = "textBox_nameShop";
-            this.textBox_nameShop.Size = new System.Drawing.Size(201, 30);
-            this.textBox_nameShop.TabIndex = 1;
+            this.textBox_nameP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_nameP.Location = new System.Drawing.Point(51, 37);
+            this.textBox_nameP.Name = "textBox_nameP";
+            this.textBox_nameP.Size = new System.Drawing.Size(201, 30);
+            this.textBox_nameP.TabIndex = 1;
             // 
             // label10
             // 
@@ -689,6 +733,9 @@
             this.Size = new System.Drawing.Size(1211, 667);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -705,7 +752,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Products)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pRODUITBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nEWSHOPDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -761,11 +808,11 @@
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Label label_phoneShop;
-        private System.Windows.Forms.TextBox textBox_locationShop;
+        private System.Windows.Forms.TextBox textBox_priceP;
         private System.Windows.Forms.Label label_localisationShop;
-        private System.Windows.Forms.TextBox textBox_nameShop;
+        private System.Windows.Forms.TextBox textBox_nameP;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView_Products;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDPRODUITDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nOMPRODUITDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pRIXPRODUITDataGridViewTextBoxColumn;
@@ -775,13 +822,16 @@
         private System.Windows.Forms.Label label11;
         private NEWSHOPDataSetTableAdapters.PRODUITTableAdapter pRODUITTableAdapter;
         private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.ComboBox comboBox_categoryP;
+        private System.Windows.Forms.ComboBox comboBox_Stocks;
+        private System.Windows.Forms.RichTextBox richTextBox_decriptionP;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.BindingSource sTOCKBindingSource;
         private NEWSHOPDataSetTableAdapters.STOCKTableAdapter sTOCKTableAdapter;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.PictureBox pictureBox16;
     }
 }

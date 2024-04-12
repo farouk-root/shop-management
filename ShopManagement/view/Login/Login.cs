@@ -18,6 +18,7 @@ namespace ShopManagement.view.Login
         public Login()
         {
             InitializeComponent();
+            textBox2.PasswordChar = '*';
         }
 
         private void button_signUp_Click(object sender, EventArgs e)

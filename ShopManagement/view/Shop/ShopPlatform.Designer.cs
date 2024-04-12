@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -49,6 +52,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -64,6 +69,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.panel5);
@@ -78,6 +85,38 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 667);
             this.panel1.TabIndex = 0;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel8.Controls.Add(this.label14);
+            this.panel8.Controls.Add(this.pictureBox16);
+            this.panel8.Location = new System.Drawing.Point(0, 299);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(217, 86);
+            this.panel8.TabIndex = 8;
+            this.panel8.Click += new System.EventHandler(this.panel8_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Bisque;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(70, 63);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(56, 20);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Stock";
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::ShopManagement.Properties.Resources.stockIcon;
+            this.pictureBox16.Location = new System.Drawing.Point(50, 0);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(102, 60);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 1;
+            this.pictureBox16.TabStop = false;
             // 
             // label6
             // 
@@ -105,7 +144,7 @@
             this.panel5.BackColor = System.Drawing.Color.PeachPuff;
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.pictureBox5);
-            this.panel5.Location = new System.Drawing.Point(3, 403);
+            this.panel5.Location = new System.Drawing.Point(3, 502);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(217, 86);
             this.panel5.TabIndex = 7;
@@ -181,7 +220,7 @@
             this.panel4.BackColor = System.Drawing.Color.PeachPuff;
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Location = new System.Drawing.Point(3, 300);
+            this.panel4.Location = new System.Drawing.Point(3, 399);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(217, 86);
             this.panel4.TabIndex = 3;
@@ -242,11 +281,12 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label_ShopName);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(3, 98);
+            this.panel2.Location = new System.Drawing.Point(-2, 98);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(217, 86);
+            this.panel2.Size = new System.Drawing.Size(222, 86);
             this.panel2.TabIndex = 1;
             // 
             // label_ShopName
@@ -294,6 +334,9 @@
             this.Size = new System.Drawing.Size(1211, 667);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -335,5 +378,8 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.PictureBox pictureBox16;
     }
 }

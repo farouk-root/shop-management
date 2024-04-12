@@ -48,6 +48,13 @@ namespace ShopManagement.view.Shop
             ProductsView.Show();
         }
 
+        private void panel8_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            UserControl StockView = new StockShop(userData);
+            this.Controls.Add(StockView);
+            StockView.Show();
+        }
     }
 
 }

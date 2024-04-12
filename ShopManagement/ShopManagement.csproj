@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controller\ProductController.cs" />
     <Compile Include="controller\ShopController.cs" />
+    <Compile Include="controller\StockController.cs" />
     <Compile Include="controller\UserController.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -54,7 +56,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="model\Product\ProductModel.cs" />
     <Compile Include="model\Shop\ShopModel.cs" />
+    <Compile Include="model\Stock\StockModel.cs" />
     <Compile Include="model\User\UserModel.cs" />
     <Compile Include="NEWSHOPDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -94,6 +98,12 @@
     <Compile Include="view\Shop\ShopPlatform.Designer.cs">
       <DependentUpon>ShopPlatform.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\Shop\StockShop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="view\Shop\StockShop.Designer.cs">
+      <DependentUpon>StockShop.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\Shop\ShopPlatform.resx">
       <DependentUpon>ShopPlatform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Shop\StockShop.resx">
+      <DependentUpon>StockShop.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="NEWSHOPDataSet.xsc">
@@ -177,6 +190,9 @@
     <None Include="Assets\priceIcon.png" />
     <None Include="Assets\categoryIcon.png" />
     <None Include="Assets\descriptionIcon.png" />
+    <None Include="Assets\stockIcon.png" />
+    <None Include="Assets\expirationIcon.png" />
+    <None Include="Assets\receivedDataIcon.png" />
     <Content Include="NEWSHOP.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

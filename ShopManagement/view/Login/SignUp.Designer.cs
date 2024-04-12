@@ -39,15 +39,18 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comboBox_Shops = new System.Windows.Forms.ComboBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // button_signUp
             // 
-            this.button_signUp.Location = new System.Drawing.Point(815, 441);
+            this.button_signUp.Location = new System.Drawing.Point(758, 610);
             this.button_signUp.Name = "button_signUp";
             this.button_signUp.Size = new System.Drawing.Size(132, 54);
             this.button_signUp.TabIndex = 19;
@@ -99,7 +102,7 @@
             "ADMIN",
             "GERANT",
             "STAFF"});
-            this.comboBox_Role.Location = new System.Drawing.Point(795, 388);
+            this.comboBox_Role.Location = new System.Drawing.Point(801, 386);
             this.comboBox_Role.Name = "comboBox_Role";
             this.comboBox_Role.Size = new System.Drawing.Size(156, 28);
             this.comboBox_Role.TabIndex = 21;
@@ -108,7 +111,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(796, 365);
+            this.label3.Location = new System.Drawing.Point(801, 365);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 20);
             this.label3.TabIndex = 22;
@@ -157,10 +160,32 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
+            // comboBox_Shops
+            // 
+            this.comboBox_Shops.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_Shops.FormattingEnabled = true;
+            this.comboBox_Shops.Location = new System.Drawing.Point(805, 478);
+            this.comboBox_Shops.Name = "comboBox_Shops";
+            this.comboBox_Shops.Size = new System.Drawing.Size(156, 37);
+            this.comboBox_Shops.TabIndex = 24;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = global::ShopManagement.Properties.Resources.shopIcon;
+            this.pictureBox5.Location = new System.Drawing.Point(754, 478);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(37, 30);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 25;
+            this.pictureBox5.TabStop = false;
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.comboBox_Shops);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox_Role);
@@ -178,6 +203,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,5 +222,7 @@
         private System.Windows.Forms.ComboBox comboBox_Role;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.ComboBox comboBox_Shops;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }

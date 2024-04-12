@@ -102,6 +102,13 @@ namespace ShopManagement.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap expirationIcon {
+            get {
+                object obj = ResourceManager.GetObject("expirationIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap localisationIcon {
             get {
                 object obj = ResourceManager.GetObject("localisationIcon", resourceCulture);
@@ -165,6 +172,13 @@ namespace ShopManagement.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap receivedDataIcon {
+            get {
+                object obj = ResourceManager.GetObject("receivedDataIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap ROLE {
             get {
                 object obj = ResourceManager.GetObject("ROLE", resourceCulture);
@@ -182,6 +196,13 @@ namespace ShopManagement.Properties {
         internal static System.Drawing.Bitmap shopIcon {
             get {
                 object obj = ResourceManager.GetObject("shopIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap stockIcon {
+            get {
+                object obj = ResourceManager.GetObject("stockIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -14,3 +14,4 @@ C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\obj\x86\Debug\ShopMan
 C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\bin\Debug\NEWSHOP.accdb
 C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\obj\x86\Debug\ShopManagement.view.Shop.ShopPlatform.resources
 C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\obj\x86\Debug\ShopManagement.view.Shop.ProductsShop.resources
+C:\Users\farouk\Desktop\Emna\ShopManagement\ShopManagement\obj\x86\Debug\ShopManagement.view.Shop.StockShop.resources
